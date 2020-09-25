@@ -287,8 +287,10 @@ h6 { font-size: 16px; }
 }
 
 #social_image {
-    justify-self: center;
-
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .post-wrapper {
@@ -305,6 +307,22 @@ h6 { font-size: 16px; }
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -mox-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+.indv-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indv-post-picture {
+    width: 60%;
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
+.indv-post-preview {
+    width: 60%;
 }
 
 .thumbnail {
